@@ -78,22 +78,24 @@ margin-right: 10px;
  top: 450px;
 }
 
-.main-container{
-position:fixed;
-left: 22%;
-top: 0%; 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 80%; 
-max-width: 600px;
-margin: 200px auto;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(68, 32, 32, 0.7);
-background-color: rgba(255, 255, 255, 0.5);
+.main-container {
+ position: fixed;
+ left: 50%; 
+ top: calc(25% + 100px); 
+ transform: translateX(-50%); 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 80%;
+ max-width: 600px;
+ padding: 30px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(68, 32, 32, 0.7);
+ background-color: rgba(255, 255, 255, 0.5);
+ z-index: 999; 
 }
+
 
 .upper-card{
  display: flex;
