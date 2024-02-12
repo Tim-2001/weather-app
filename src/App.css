@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100,300;500&display=swap');
+
+
+.app {
+ height: 100vh;
+ width: 100vw;
+ background-position: center center;
+ position: relative;
+ font-family: 'Noto Sans', sans-serif;
+ color: rgba(61, 59, 59, 0.9);
+ transition-duration: 1s;
+ overflow: hidden;
+}
+
+
+.nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background-color: rgba(255, 255, 255, 0.5); 
+ padding: 18px; 
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ z-index: 1000; 
+}
+
+.nav h1 {
+ margin: 0; 
+ font-size: 26px;
+ text-align: center;
+ color: rgba(61, 59, 59, 0.9);
+}
+
+.search {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: fixed;
+ left: 50%;
+ top: 25%;
+ transform: translate(-50%, -50%);
+ border-radius: 15px;
+ border-left: 1px solid rgba(255, 255, 255, 0.7);
+ border-top: 1px solid rgba(255, 255, 255, 0.7);
+ background: rgba(225, 225, 225, 0.2);
+ backdrop-filter: blur(1px);
+ overflow: hidden;
+ padding: 5px;
+}
+
+.search > input {
+ font-size: 20px;
+ width:200px;
+ background:transparent;
+ border:none;
+ outline: none;
+ color:white;
+ padding: 8px;
+}
+
+.search > input::placeholder{
+ color:white;
+}
+
+.search-icon{
+cursor: pointer;
+transform: scale(1.2);
+margin-right: 10px;
+}
+
+.search-icon:hover {
+ transform: scale(1.4);
+}
+
+.weather-container > h2 {
+ font-size: 35px;
+ left: 60px;
+ top: 450px;
+}
+
+.main-container{
+position:fixed;
+left: 22%;
+top: 0%; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 80%; 
+max-width: 600px;
+margin: 200px auto;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(68, 32, 32, 0.7);
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+.upper-card{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+ left: 55px;
+ top: 280px; 
+ color:rgba(255, 255, 255, 0.7);
+}
+
+.upper-card >h1{
+ font-size: 75px;
+ padding: 5px;
+}
+
+.condition-high-low{
+ margin-left: 25px;
+}
+
+.condition-high-low > h1:nth-of-type(1){
+ font-size: 34px;
+ color:rgb(255, 255, 255);
+}
+
+.condition-high-low > h1:nth-of-type(2), h1:nth-of-type(3){
+ font-size: 24px;
+}
